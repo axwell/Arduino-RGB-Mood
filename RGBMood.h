@@ -40,6 +40,9 @@ class RGBMood {
     uint16_t red() {return current_RGB_color_[0];}                // The current red color.
     uint16_t green() {return current_RGB_color_[1];}              // The current green color.
     uint16_t blue() {return current_RGB_color_[2];}               // The current blue color.
+    uint16_t hue() {return current_HSB_color_[0];}                // The current hue 
+    uint16_t saturation() {return current_HSB_color_[1];}         // The current saturation
+    uint16_t brightness() {return current_HSB_color_[2];}         // The current brightness
   private:
     Modes mode_;
     uint8_t pins_[3];           // The pins for color output. (PWM)
